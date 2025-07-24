@@ -4,6 +4,10 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+axum = "0.6"
+hyper = "1.6.0"
 serde = "1.0.219"
 serde_derive = "1.0.219"
 serde_json = "1.0.141"
+sqlx = { version = "0.8.6", features = ["runtime-tokio-rustls", "sqlite"] }
+tokio = { version = "1.46.1", features = ["full"] }

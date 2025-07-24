@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS patient (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    sex TEXT,
+    date_of_birth TEXT,
+    ssn TEXT,
+    marital_status TEXT,
+    religion TEXT,
+    address_line1 TEXT,
+    address_line2 TEXT,
+    address_line3 TEXT,
+    city TEXT,
+    state TEXT,
+    zip TEXT,
+    county TEXT,
+    phone_home TEXT,
+    phone_work TEXT,
+    next_of_kin TEXT,
+    next_of_kin_phone TEXT,
+    emergency_contact TEXT,
+    emergency_contact_phone TEXT
+);
