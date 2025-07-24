@@ -1,1 +1,31 @@
 /target
+# Rust/Cargo
+**/*.rs.bk
+Cargo.lock
+
+# IDEs/editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+*.tmp
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Byebug/other debug
+debug.log
+
+# Node/npm (if present)
+node_modules/
+
+# Misc
+*.log
+*.out
+*.old
+*.orig
+*.rej
