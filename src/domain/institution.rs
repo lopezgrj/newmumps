@@ -3,13 +3,20 @@ use serde::{Serialize, Deserialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Institution {
-    pub name: String,                // .01 NAME
-    pub station_number: Option<String>, // .99 STATION NUMBER
-    pub address_line1: Option<String>, // .111 STREET ADDRESS [LINE 1]
-    pub city: Option<String>,        // .114 CITY
-    pub state: Option<String>,       // .115 STATE
-    pub zip: Option<String>,         // .116 ZIP+4
-    pub phone: Option<String>,       // .131 PHONE NUMBER
+    /// .01 NAME - Institution Name
+    pub name: String,
+    /// .99 STATION NUMBER - VA Station Number
+    pub station_number: Option<String>,
+    /// .111 STREET ADDRESS [LINE 1]
+    pub address_line1: Option<String>,
+    /// .114 CITY
+    pub city: Option<String>,
+    /// .115 STATE
+    pub state: Option<String>,
+    /// .116 ZIP+4
+    pub zip: Option<String>,
+    /// .131 PHONE NUMBER
+    pub phone: Option<String>,
 }
 
 impl Institution {
